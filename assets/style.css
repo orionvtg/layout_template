@@ -29,6 +29,39 @@ main {
 height: 80vh;
 }
 
+.clearfix::after{
+  content: "";
+  clear: both; 
+  display:block;
+}
+
+.left {
+background-color: yellow;
+float: left;
+}
+
+.right {
+background: cyan;
+float: right;
+position: relative;
+}
+
+.center {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background-color: black;
+  height: 60px;
+  width: 60px;
+  /* border-radius: 15px; */
+}
+.left,
+ .right {
+   width:50%;
+   height: 80vh;
+ }
+
 footer {
 height: 10vh;
 background-color: blue;
